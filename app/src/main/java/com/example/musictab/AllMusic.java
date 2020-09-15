@@ -95,8 +95,8 @@ public class AllMusic extends Fragment {
             if (currentFile.isDirectory() && !currentFile.isHidden()){
                 allMusicFileObject.addAll(findMusicFile(currentFile));
             }
-            else{
-                if (currentFile.getName().endsWith(".mp3") || currentFile.getName().endsWith(".mp4a") || currentFile.getName().endsWith(".wav") || currentFile.getName().endsWith(".mp4")) {
+            else{                             // || currentFile.getName().endsWith(".mp4")
+                if (currentFile.getName().endsWith(".mp3") || currentFile.getName().endsWith(".mp4a") || currentFile.getName().endsWith(".wav")) {
                     allMusicFileObject.add(currentFile);
                 }
             }
